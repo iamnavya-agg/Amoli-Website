@@ -754,17 +754,56 @@ h6 {
   z-index: 999;
 }
 
-.gal-cover {
-  width: 450px;
-  height: 300px;
-  margin: 20px;
-  text-align: center;
+.gal-box  {
+  margin:auto;
+  background-color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.gal-cover:hover {
-  opacity: 0.5;
+.gal-cover {
+  width: 353px;
+  height: 233px;
+  margin: auto;
+  font-size: 18px;
+  text-align: center;
+  background-color: #ff1932;
+  color: #fff;
+  padding: 30px;
+}
+
+.head-gal {
+    font-size: 27px;
+}
+
+.button-gal {
+  margin:auto;
+  position: relative;
+  width: 230px;
+  height: 50px;
+  font-size: 20px;
   background-color: #fff;
-  transform: scale(1.1);
+  color: #ff1932;
+  padding-top: 7px;
+  padding-bottom: 9px;
+  top: 55px;
+  font-weight: bolder;
+}
+
+.gal-cover .head-gal {
+  font-weight: bold;
+}
+
+.gal-cover:hover 
+{
+  background-color: #fff;
+  color: #ff1932;
+}
+
+.gal-cover:hover > .button-gal
+{
+  background-color: #ff1932;
+  color: #fff;
 }
 
 .container.gallery-container {
