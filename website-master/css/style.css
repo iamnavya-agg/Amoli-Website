@@ -754,43 +754,46 @@ h6 {
   z-index: 999;
 }
 
-.gal-box  {
-  margin:auto;
+.gal-box {
+  margin: auto;
   background-color: #fff;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding: 2%;
+  height: 300px;
+  margin-bottom: 3%;
 }
 
 .gal-cover {
-  width: 353px;
-  height: 233px;
   margin: auto;
+  height: 100%;
   font-size: 18px;
   text-align: center;
   background-color: #ff3950;
   color: #fff;
-  padding: 30px;
+  padding: 3%;
+}
+
+.col-xs-9  {
+  margin: auto;
 }
 
 .head-gal {
-    font-size: 27px;
+  font-size: 27px;
+  font-weight: bold;
 }
 
 .button-gal {
   margin:auto;
   position: relative;
-  width: 230px;
-  height: 50px;
+  bottom: -45%;
+  vertical-align: middle;
+  width: 80%;
+  height: 22%;
   font-size: 20px;
   background-color: #fff;
+  padding: 2.5%;
   color: #ff3950;
-  padding: 7px 9px 7px 9px;
-  top: 55px;
   font-weight: bolder;
-}
-
-.gal-cover .head-gal {
-  font-weight: bold;
+  text-align: center;
 }
 
 .gal-cover:hover 
@@ -931,11 +934,6 @@ h6 {
 @media screen and (max-width: 620px) {
   .abt-img {
     width: 350px;
-    height: 200px;
-  }
-
-  .gal-cover {
-    width: 80%;
     height: 200px;
   }
 
