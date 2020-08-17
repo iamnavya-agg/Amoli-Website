@@ -772,8 +772,11 @@ h6 {
   padding: 3%;
 }
 
-.col-xs-9  {
-  margin: auto;
+
+@media (min-width: 621px) and (max-width: 767px) {
+  .col-xs-8 {
+    margin-left: 16.67%;
+  }
 }
 
 .head-gal {
@@ -783,18 +786,19 @@ h6 {
 
 .button-gal {
   margin:auto;
-  position: absolute;
-  bottom: 30px;
-  left: 18%;
+  /*position: absolute;
+  bottom: 30px;*/
   vertical-align: middle;
-  width: 64%;
+  width: 70%;
   height: 15%;
   font-size: 20px;
   background-color: #fff;
-  padding: 2%;
   color: #ff3950;
   font-weight: bolder;
   text-align: center;
+  position: absolute;
+  bottom:11%;
+  left: 15%;
 }
 
 .gal-cover:hover 
@@ -946,6 +950,15 @@ h6 {
     margin-bottom: 30px;
     z-index: 999;
   }
+
+  .row .gal-box {
+    width:400px;
+    margin: 10%;;
+  }
+
+  /*.gal-cover {
+    width: 360px;
+  }*/
 
   .hid-br {
     display: none;
