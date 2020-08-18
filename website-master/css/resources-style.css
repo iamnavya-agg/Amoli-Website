@@ -819,6 +819,16 @@ h6 {
   text-align: left;
 }
 
+@media (min-width: 621px) and (max-width: 767px) {
+  .col-xs-9{
+    margin-left: 12.25%;
+  }
+  
+  .col-xs-9 .pdf-box{
+    height: auto !important;
+  }
+}
+
 .pdf-heading {
   font-weight: bolder;
   color: #ff3950;
@@ -842,14 +852,12 @@ h6 {
 
 .pdf-button {
   background-color: #ff3950;
+  margin: auto;
   color: #fff;
   font-size: 15px;
   text-align: left;
   font-weight: bolder;
-  position: absolute;
-  bottom: 30px;
   display: inline-block;
-  width: 72.7%;
 }
 
 .pdf-button:hover {
@@ -950,9 +958,11 @@ h6 {
     margin: 10%;;
   }
 
-  /*.gal-cover {
-    width: 360px;
-  }*/
+  .row .pdf-box{
+    height: auto !important;
+    width: 100%;
+    margin-left: 12.25%;
+  }
 
   .hid-br {
     display: none;
