@@ -772,13 +772,6 @@ h6 {
   padding: 3%;
 }
 
-
-@media (min-width: 621px) and (max-width: 767px) {
-  .col-xs-8 {
-    margin-left: 16.67%;
-  }
-}
-
 .head-gal {
   font-size: 27px;
   font-weight: bold;
@@ -807,6 +800,12 @@ h6 {
   color: #fff;
 }
 
+@media (min-width: 621px) and (max-width: 767px) {
+  .col-xs-8 {
+    margin-left: 16.67%;
+  }
+}
+
 .pdf-box {
   width: auto;
   background-color: #fff;
@@ -817,17 +816,6 @@ h6 {
   border-color: #ff3950;
   height: 500px;
   text-align: left;
-}
-
-@media (min-width: 621px) and (max-width: 767px) {
-  .col-xs-9{
-    margin-left: 16.67%;
-  }
-  
-  .col-xs-9 .pdf-box{
-    height: auto !important;
-    margin-left: 12.25%;
-  }
 }
 
 .pdf-heading {
@@ -864,6 +852,17 @@ h6 {
 .pdf-button:hover {
   background: #ff6576 !important;
   border-color: #ff6576 !important;
+}
+
+@media (min-width: 621px) and (max-width: 767px) {
+  .col-xs-9{
+    margin-left: 12.25%;
+  }
+  
+  .col-xs-9 .pdf-box{
+    height: auto !important;
+    margin-left: 10%;
+  }
 }
 
 .container.gallery-container {
@@ -954,9 +953,14 @@ h6 {
     z-index: 999;
   }
 
+  .col-xs-8 {
+    width: 100%;
+  }
+
   .row .gal-box {
     width:400px;
-    margin: 10%;;
+    margin-top: 1%;
+    margin-bottom: 1%;
   }
 
   .row .pdf-box{
