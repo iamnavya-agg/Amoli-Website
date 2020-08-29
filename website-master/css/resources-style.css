@@ -790,6 +790,22 @@ h2::after{
   }
 }
 
+@media (max-width: 1060px) and (min-width: 992px)
+{
+  .para-res {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 810px)
+{
+  .para-res {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 .gal-box {
   margin: auto;
   background-color: #fff;
