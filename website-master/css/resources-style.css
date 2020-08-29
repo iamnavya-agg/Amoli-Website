@@ -71,7 +71,7 @@
 }
 
 body {
-  font-family: 'Work Sans', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-weight: 300;
   font-size: 20px;
   line-height: 1.7;
@@ -439,8 +439,8 @@ h6 {
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  background: #66d8b4 !important;
-  border-color: #66d8b4 !important;
+  background: #ff6576 !important;
+  border-color: #ff6576 !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
@@ -754,6 +754,42 @@ h6 {
   z-index: 999;
 }
 
+h2 {
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  position: relative;
+  margin: 30px 0 50px;
+}
+
+h2::after{
+  content: "";
+  width: 100px;
+  position: absolute;
+  margin: 0 auto;
+  height: 3px;
+  background: #FF6576;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px)
+{
+  .img-right {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 991px)
+{
+  .txt-left {
+    padding-top: 30px;
+  }
+}
+
 .gal-box {
   margin: auto;
   background-color: #fff;
@@ -767,7 +803,7 @@ h6 {
   height: 100%;
   font-size: 18px;
   text-align: center;
-  background-color: #ff3950;
+  background-color: #ff6576;
   color: #fff;
   padding: 3%;
 }
@@ -781,6 +817,7 @@ h6 {
 .head-gal {
   font-size: 27px;
   font-weight: bold;
+  font-family: "Roboto", sans-serif;
 }
 
 .button-gal {
@@ -789,7 +826,7 @@ h6 {
   height: 15%;
   font-size: 20px;
   background-color: #fff;
-  color: #ff3950;
+  color: #ff6576;
   font-weight: bolder;
   text-align: center;
 }
@@ -840,12 +877,12 @@ h6 {
 .gal-cover:hover 
 {
   background-color: #fff;
-  color: #ff3950;
+  color: #ff6576;
 }
 
 .gal-cover:hover .button-gal
 {
-  background-color: #ff3950;
+  background-color: #ff6576;
   color: #fff;
 }
 
@@ -856,7 +893,7 @@ h6 {
   padding: 4% 5% 4% 5%;
   border-style: solid;
   border-width: 2px 2px;
-  border-color: #ff3950;
+  border-color: #ff6576;
   height: 500px;
   text-align: left;
 }
@@ -874,7 +911,7 @@ h6 {
 
 .pdf-heading {
   font-weight: bolder;
-  color: #ff3950;
+  color: #ff6576;
   margin-bottom: 2%;
 }
 
@@ -882,7 +919,7 @@ h6 {
   margin:auto;
   border-style: solid;
   border-width: 1px 1px;
-  border-color: #ff3950;
+  border-color: #ff6576;
 }
 
 .pdf-text {
@@ -894,7 +931,7 @@ h6 {
 }
 
 .pdf-button {
-  background-color: #ff3950;
+  background-color: #ff6576;
   margin: auto;
   color: #fff;
   font-size: 15px;
