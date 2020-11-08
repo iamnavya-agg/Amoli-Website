@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Amoli Trust - Every Child is Precious</title>
+    <title>Amoli Trust - Every Child is Precious | New Delhi</title>
 
     <meta property="og:title" content="Amoli Trust - Every Child is Precious" />
     <meta property="og:image" content="https://amolitrust.com/images/home.JPG" />
@@ -16,13 +16,14 @@
     <meta name="twitter:title" content="Amoli Trust - Every Child is Precious" />
     <meta name="twitter:image" content="https://amolitrust.com/images/home.JPG" />
     <meta name="twitter:url" content="https://amolitrust.com" />
-
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  	<meta name="Author" content="blog.sombex.com">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
       content="Amoli, meaning ‘precious’ is an NGO started by 8 college students, which educates children about the abnormality of Child Sexual Abuse prevailing in the society and helps in protection of their innocence." />
     <meta name="keywords" content="Amoli trust, NGO for child sexual abuse, NGOs in delhi, CSA, Child sexual abuse" />
-    <meta name="author" content="Swastik Jain" />
+    <meta name="author" content="Aditya Arora" />
     <meta name="robots" content="index,follow,archive" />
 
 
@@ -40,9 +41,10 @@
     <link rel="stylesheet" href="css/icomoon.css">
 
     <link rel="stylesheet" href="css/style.css">
-
+    <link  rel = "stylesheet" href = "style.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
     <script src="js/modernizr-2.6.2.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -66,6 +68,168 @@
     <!--[if lt IE 9]>
     <script src="js/respond.min.js"></script>
     <![endif]-->
+    <style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.emotions {
+	position: absolute;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  /*font-size: 50px;*/
+  padding: 8px 12px;
+  position: absolute;
+  /*top: 50%;*/
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+@import "compass/css3";
+ .circle-container {
+	 position: relative;
+	 width: 20em;
+	 height: 20em;
+	 border-radius: 50%;
+	 padding: 0;
+	 list-style: none;
+	 margin: 5em auto 0;
+	 border: solid 5px tomato;
+/*animation: mymove 1s infinite;*/
+}
+
+
+@keyframes mymove {
+  100% {transform: rotate(360deg);}
+}
+ .circle-container > * {
+	 display: block;
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 margin: -3em;
+	 width: 6em;
+	 height: 6em;
+}
+ .circle-container > *:nth-of-type(1) {
+	 transform: rotate(0deg) translate(10em) rotate(0deg);
+}
+ .circle-container > *:nth-of-type(2) {
+	 transform: rotate(60deg) translate(10em) rotate(-60deg);
+}
+ .circle-container > *:nth-of-type(3) {
+	 transform: rotate(120deg) translate(10em) rotate(-120deg);
+}
+ .circle-container > *:nth-of-type(4) {
+	 transform: rotate(180deg) translate(10em) rotate(-180deg);
+}
+ .circle-container > *:nth-of-type(5) {
+	 transform: rotate(240deg) translate(10em) rotate(-240deg);
+}
+ .circle-container > *:nth-of-type(6) {
+	 transform: rotate(300deg) translate(10em) rotate(-300deg);
+}
+ .circle-container img {
+	 display: block;
+	 max-width: 100%;
+	 border-radius: 50%;
+	 filter: grayscale(0%);
+	 border: solid 5px tomato;
+	 transition: 0.15s;
+}
+.circle-container text {
+	 display: block;
+	 max-width: 100%;
+	 border-radius: 50%;
+	 filter: grayscale(100%);
+	 border: solid 5px tomato;
+	 transition: 0.15s;
+}
+.circle-container img + .onhover{
+	position: absolute;
+ bottom: 0;
+ right: 0;
+ background: black;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+	}
+	.circle-container img:hover + .onhover{
+		width: 150px;
+ padding: 8px 15px;
+ visibility: visible;
+ opacity: 0.7;
+	}
+ .circle-container img:hover {
+	 filter: grayscale(50%);
+}
+
+.slow-spin {
+  -webkit-animation: fa-spin 10s infinite linear;
+  animation: fa-spin 10s infinite linear;
+} 
+</style>
 
     <style type="text/css">
       body {
@@ -192,40 +356,136 @@
           <nav class="fh5co-main-nav">
 
             <ul>
-              <a href="index.html">
-                <img src="images/logow.png" class="logo-fix">
-              </a>
+              <img src="images/logow.png" class="logo-fix">
               <span class="fix-logo"><br /></span>
-              <li class="fh5co-active"><a href="index.html"><span>Home</span></a></li>
-              <li><a href="about-us.html"><span>About us</span></a></li>
-              <li><a href="our-work.html"><span>Our Work</span></a></li>
-              <li><a href="resources.html"><span>Resources</span></a></li>
-              <li><a href="your_contribution.html"><span>Your Contribution</span></a></li>
-              <li><a href="contact-us.html"><span>Contact us</span></a></li>
+              <li class="fh5co-active"><a href="https://amolitrust.com"><span>Home</span></a></li>
+              <li><a href="about-us"><span>About us</span></a></li>
+              <li><a href="team"><span>Meet the team</span></a></li>
+              <li><a href="gallery"><span>Gallery</span></a></li>
+              <li><a href="mystory"><span>My Story</span></a></li>
+              <li><a href="join-us"><span>Join Us</span></a></li>
+              <li><a href="https://blog.amolitrust.com" target="_blank"><span>Blog</span></a></li>
+              <li><a href="contact-us"><span>Contact</span></a></li>
             </ul>
           </nav>
         </div>
       </header>
 
-      <div class="fh5co-hero" style="background-image: url(images/contact.jpg);" data-stellar-background-ratio="0.5">
-        <div class="overlay"></div>
-        <div class="container">
-          <div class="row">
-            <div
-              class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
-              <div class="fh5co-intro fh5co-table-cell">
-                <h1 class="text-center">Every Child is precious, Every child is Amoli.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="slideshow-container" style="width:100% ; height:100%">
+
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 10</div>
+			  <img src="images/home-bg.JPG" style="width:100%">
+			  <div class="text" style="top: 50%;font-size: 50px"  >Every Child is precious, Every Child is Amoli.</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 10</div>
+			  <img src="images/home-bg.JPG" style="width:100%">
+			  <div class="text" style="top: 50%">The World Health Organization (WHO) defines Child Sexual Abuse (CSA) as “the involvement of a child in sexual activity that he or she does not fully comprehend, is unable to give informed consent to, or for which the child is not developmentally prepared and cannot give consent, or that violates the laws or social taboos of society.”</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 10</div>
+			  <img src="images/home-bg.JPG" style="width:100%">
+			  <div class="text" style="top: 50%">According to the National Crime Records Bureau, every day 109 children are sexually abused in India.</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">4 / 10</div>
+			  <img src="images/home-bg.JPG" style="width:100%">
+			  <div class="text" style="top: 50%">In a global compilation of reports of Child Sexual Abuse Material (CSAM) found online, India stands right on top of the list, with 11.7% of the total reports or at 19.87 lakh reports.</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">5 / 10</div>
+			  <img src="images/home-bg.JPG" style="width:100%">
+			  <div class="text" style="top: 50%">According to the recently released NCRB data, 32,608 cases were reported in 2017 while 39,827 cases were reported in 2018 under the Protection of Children from Sexual Offences Act (POCSO).</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">6 / 10</div>
+			  <img src="images/home-bg.JPG" style="width:100%">
+			  <div class="text" style="top: 50%">As many as 21,605 child rapes were recorded in 2018 which included 21,401 rapes of girls and 204 boys, the data showed.</div>
+			</div>
+			<div class="mySlides fade">
+			  <div class="numbertext">7 / 10</div>
+			  <img src="images/home-bg.JPG" style="width:100%">
+			  <div class="text" style="top:50%">Overall crimes against children have increased steeply over six times in the decade over 2008-2018, from 22,500 cases recorded in 2008 to 1,41,764 cases in 2018, according to the NCRB data from 2008 and 2018.</div>
+			</div>
+			<div class="mySlides fade">
+			  <div class="numbertext">8 / 10</div>
+			  <img src="images/home-bg.JPG" style="width:100%">
+			  <div class="text" style="top:50%">As many as 781 cases of use of child pornography or storing child pornography material were also recorded in 2018, more than double that of 2017 when 331 such cases were recorded, the data showed.</div>
+			</div>
+			<div class="mySlides fade">
+			  <div class="numbertext">9 / 10</div>
+			  <img src="images/home-bg.JPG" style="width:100%">
+			  <div class="text" style="top:50%">In India, a child is sexually abused every 15 minutes, according to the latest government figures.</div>
+			</div>
+			<div class="mySlides fade">
+			  <div class="numbertext">10 / 10</div>
+			  <img src="images/home-bg.JPG" style="width:100%">
+			  <div class="text" style="top:50%">According to a 2007 study conducted by India's ministry of women and child development, 53% of children surveyed said they had been subjected to some form of sexual abuse.</div>
+			</div>
 
 
+		</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+
+<div class="container ">
+	<div class="row"><div class="col-md-2">world</div><div class="col-md-8">
+	<ul class="circle-container " style="text-align: center; ">
+  <li><img src="images/amoli/emojis/happy.png"><div class="timer count-title count-number onhover" data-to="149" data-speed="10000" style="margin-right:140px ;margin-bottom:30px"></div></li>
+  <li><img src="images/amoli/emojis/sad.png"><div class="timer count-title count-number onhover" data-to="309" data-speed="10000" style="margin-right:140px ;margin-bottom:30px"></div></li>
+  <li><img src="images/amoli/emojis/angry.png"><div class="timer count-title count-number onhover" data-to="536" data-speed="10000" style="margin-right:140px ;margin-bottom:30px"></div></li>
+  <li><img src="images/amoli/emojis/confused.png"><div class="timer count-title count-number onhover" data-to="252" data-speed="10000" style="margin-right:140px ;margin-bottom:30px"></div></li>
+  <li><img src="images/amoli/emojis/shy.png"><div class="timer count-title count-number onhover" data-to="118" data-speed="10000" style="margin-right:140px ;margin-bottom:30px"></div></li>
+  <li><img src="images/amoli/emojis/scared.png"><div class="timer count-title count-number onhover" data-to="344" data-speed="10000" style="margin-right:140px ;margin-bottom:30px"></div></li>
+</ul>
+</div>
+<div class="col-md-2">hello</div>
+</div>
+</div>
       <div class="fh5co-section">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6" >
               <h2>The Issue</h2>
               <p style="font-size: 18px;">In India, every 15 minutes a child is sexually abused. 1 in
                 every 5 girls and 1 in every 20 boys is a victim of child Sexual Abuse. We, at Amoli are
@@ -240,8 +500,10 @@
                 need, they are left to suffer in silence.
               </p>
             </div>
-            <div class="col-md-6">
-              <img src="images/home-bg.JPG" class="img-responsive">
+            <div class="col-md-6" style="margin-top: 100px">
+              <iframe width="500" height="350"
+				src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+				</iframe>
             </div>
             <div class="col-md-12">
               <p style="font-size: 18px;">
@@ -250,27 +512,12 @@
                 would’ve felt had they been in the victim’s shoes.
                 The emotions are as follows:
 
-              <div class="col-md-6 emotions">
-                <ul style="font-size: 21px; list-style-type: none;">
-                  <li><i class="fa fa-check"></i> Happy</li bold;">
-                  <li><i class="fa fa-check"></i> Angry</li>
-                  <li><i class="fa fa-check"></i> Sad</li>
-                </ul>
-              </div>
-              <div class="col-md-6 emotions">
-                <ul style="font-size: 21px; list-style-type: none;">
-                  <li><i class="fa fa-check"></i> Scared</li>
-                  <li><i class="fa fa-check"></i> Shy</li>
-                  <li><i class="fa fa-check"></i> Confused</li>
-                </ul>
-              </div>
+     
               </p>
             </div>
           </div>
         </div>
       </div>
-
-
 
       <div class="container">
         <div class="col-md-4">
@@ -310,7 +557,6 @@
         </div>
       </div>
 
-
       <!-- <div class="fh5co-section" style="margin-top: 2em;">
         <div class="container">
           <div class="row">
@@ -331,7 +577,6 @@
             <div class="col-md-6">
               <div class="delhi-map">
                 <img src="./images/delhi_map.png" usemap="#image-map">
-
                 <map name="image-map">
                   <area target="_blank" alt="" title="" href="" coords="214,189,17" shape="circle">
                   <area target="_blank" alt="" title="" href="" coords="274,139,18" shape="circle">
@@ -364,7 +609,6 @@
                 </map>
               </div>
             </div>
-
           </div>
         </div>
       </div> -->
@@ -376,6 +620,7 @@
             <h2>Testimonials</h2>
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
               <!-- Carousel indicators -->
+              <!--
               <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -383,6 +628,7 @@
                 <li data-target="#myCarousel" data-slide-to="3"></li>
                 <li data-target="#myCarousel" data-slide-to="4"></li>
               </ol>
+          		Remove this commented section for bullet points-->
               <!-- Wrapper for carousel items -->
               <div class="carousel-inner">
                 <div class="item carousel-item active">
@@ -396,6 +642,111 @@
                     such an important issue.</p>
                   <p class="overview"><b>Yasmeen Adab</b></p>
                 </div>
+
+                <!-------------------------------New Testimonials----------------------------------->
+
+                <div class="item carousel-item">
+                  <div class="img-box"><img src="images/test/2.PNG" alt=""></div>
+                  <p class="testimonial">Amoli is nothing short of a journey for me. When I started volunteering, I was instantly mesmerized by the work and the cause that Amoli fosters. Being a part of Amoli has truly been an amazing experience and everything becomes worth it when I see children beaming with smiles!</p>
+                  <p class="overview"><b>Ankita Natarajan</b></p>
+                </div>
+                <div class="item carousel-item">
+                  <div class="img-box"><img src="images/test/2.PNG" alt=""></div>
+                  <p class="testimonial">I have been a part of Amoli for over a year now and so far my experience has been phenomenal. I have never imagined that I’ll be able to educate and leave an impact on so many kids on such an integral and prime topic. Taking sessions with the other volunteers, interacting with the kids, I even never could realize when Amoli became a part of me. It’s no more just an organization for me in fact Amoli is now my family. I feel immensely blessed and utterly delighted to be a part of this noble cause.
+				  I AM AMOLI!</p>
+                  <p class="overview"><b>Oindrila Ray</b></p>
+                </div>
+                <div class="item carousel-item">
+                  <div class="img-box"><img src="images/test/2.PNG" alt=""></div>
+                  <p class="testimonial">I have been a part of Amoli for the past one year and it has been a wonderful experience. Amoli has given me an opportunity to learn, understand people and contribute as a changemaker. It has managed to ignite my passion for making a difference and do something meaningful for the society.</p>
+                  <p class="overview"><b>Raghavi Singhal</b></p>
+                </div>
+                <div class="item carousel-item">
+                  <div class="img-box"><img src="images/test/2.PNG" alt=""></div>
+                  <p class="testimonial">Amoli is a basket of happiness for me. I love the way people co-operate with each other to bring a positive change in our society.</p>
+                  <p class="overview"><b>Shubham Gupta</b></p>
+                </div>                
+                <div class="item carousel-item">
+                  <div class="img-box"><img src="images/test/2.PNG" alt=""></div>
+                  <p class="testimonial">Amoli for me has been a very personal journey. I remember at the orientation itself, I felt like I belong to this place. I instantly felt that connection and I know the pride of saying that I'm a part of this family. I have grown so much as a person since I joined Amoli. Everyday is a new learning experience here! Being a survivor, the feeling of safeguarding the future of young minds is overwhelming, what else can I ask for!?</p>
+                  <p class="overview"><b>Akshita Singh</b></p>
+                </div>
+                <div class="item carousel-item">
+                  <div class="img-box"><img src="images/test/2.PNG" alt=""></div>
+                  <p class="testimonial">Amoli makes me feel happy and worthy. Thank you for letting me be a part of something bigger than me.</p>
+                  <p class="overview"><b>Kanchan Godara</b></p>
+                </div>
+                <div class="item carousel-item">
+                  <div class="img-box"><img src="images/test/2.PNG" alt=""></div>
+                  <p class="testimonial">I am proud to be a part of Amoli family and edify kids regarding CSA. The best part about the session is that kids welcome us with great alacrity. Each session culminates with a sense of accomplishment and enables us to move ahead in our journey to make this world better.</p>
+                  <p class="overview"><b>Piyush Garg</b></p>
+                </div>
+                <div class="item carousel-item">
+                  <div class="img-box"><img src="images/test/2.PNG" alt=""></div>
+                  <p class="testimonial">I knew of Amoli since its inception. And after I joined the team, I gained so much. I got to know so many different people, be it from Amoli or outside. I got to know how to handle school kids (I always wanted to teach kids in a fun way) and how to make work fun. The work was fun because my environment was so positive! 
+				  All in all it is an amazing experience to be a part of the Amoli family.</p>
+                  <p class="overview"><b>Karthik Balaji</b></p>
+                </div>
+                <div class="item carousel-item">
+                  <div class="img-box"><img src="images/test/2.PNG" alt=""></div>
+                  <p class="testimonial">I joined Amoli recently and in the few months I’ve been associated with the team, I have learnt so much about our society. The fundamental approach of building from the grassroot level through an eager team of volunteers opened a new world for me. I’ve always wanted to work for the betterment of society, and Amoli gave me just that platform. So proud to be associated with Amoli Trust!</p>
+                  <p class="overview"><b>Anshuman Gupta</b></p>
+                </div>
+                <div class="item carousel-item">
+                  <div class="img-box"><img src="images/test/2.PNG" alt=""></div>
+                  <p class="testimonial">Amoli began as an opportunity to contribute to a cause I was passionate about, but has now turned into a personal mission to spread the knowledge acquired here as far as possible. The openness to ideas, a flexible yet disciplined work environment and constant support of the leaders is commendable and has improved me as an individual. However, interacting with the kids is simply the best experience of them all!</p>
+                  <p class="overview"><b>Mehak Sharma</b></p>
+                </div>
+                <div class="item carousel-item">
+                  <div class="img-box"><img src="images/test/2.PNG" alt=""></div>
+                  <p class="testimonial">The news and stories about innocent kids becoming victim of something cruel have always been daunting and heartbreaking. I wanted to help and when I came across Amoli while searching about the topic, I immediately felt the need to join. The idea of eradicating the problem from root really fascinated me and I immediately joined in.</p>
+                  <p class="overview"><b>Chhavi Keswani</b></p>
+                </div>
+                <div class="item carousel-item">
+                  <div class="img-box"><img src="images/test/2.PNG" alt=""></div>
+                  <p class="testimonial">Amoli today to me is a feeling! A feeling of empowerment, a feeling of love and definently a feeling of belonging. When I sit down to think about what have I accomplished being in this organization, I'd be likely to say courage. A huge amount of courage and strength!</p>
+                  <p class="overview"><b>Arundhati Agomacharyya</b></p>
+                </div>
+                <div class="item carousel-item">
+                  <div class="img-box"><img src="images/test/2.PNG" alt=""></div>
+                  <p class="testimonial">It is believed 8 hugs a day are a necessity but that goes true betore i took my first amoli session with 3 class girls. In the end they ll just rushed with excitement to give a high five or a hug ofcourse with consent;). Remembering that day still brings a smile on my face till date.</p>
+                  <p class="overview"><b>Amisha Budhraja</b></p>
+                </div>
+                <div class="item carousel-item">
+                  <div class="img-box"><img src="images/test/2.PNG" alt=""></div>
+                  <p class="testimonial">Amoli : New adventures with known old souls to help the new curious ones</p>
+                  <p class="overview"><b>Rohan Taluja</b></p>
+                </div>
+                <div class="item carousel-item">
+                  <div class="img-box"><img src="images/test/2.PNG" alt=""></div>
+                  <p class="testimonial">I always look forward to taking sessions and spending time with these little kids. It’s very enlightening to make them aware about CSA and learning about the situations they’ve been in and how they’ve fought for their own safety boldly. The past 2 years with Amoli have helped me to not only make the kids aware about CSA but making myself confident about my safety as well.</p>
+                  <p class="overview"><b>Niharika Khera</b></p>
+                </div>
+                <div class="item carousel-item">
+                  <div class="img-box"><img src="images/test/2.PNG" alt=""></div>
+                  <p class="testimonial">Amoli has made me learn a lot of things, patience being the most important one. Working with Amoli has always been amazing. From taking sessions to working on a blog to everything, it is always fun and very knowledgeable. Nothing really gives me the amount of fulfilment as Amoli does. The entire core and team is like a family to me which I would never want to stop being a part of.</p>
+                  <p class="overview"><b>Bhumika Malhotra</b></p>
+                </div>
+                <div class="item carousel-item">
+                  <div class="img-box"><img src="images/test/2.PNG" alt=""></div>
+                  <p class="testimonial">I joined Amoli for the cause which it is working on and it has been doing a great job in spreading awareness about CSA.
+				  AMOLI has made me in a way more expressive and confident and I really miss taking sessions in school especially in this lockdown period.</p>
+                  <p class="overview"><b>Simran Meena</b></p>
+                </div>
+                <!--
+                <div class="item carousel-item">
+                  <div class="img-box"><img src="images/test/2.PNG" alt=""></div>
+                  <p class="testimonial">"Changing the world" was a concept I never believed in. I always thought that benevolent actions or deeds bring no fruit as they they are not appreciated. 
+
+				  People at Amoli made me realise how wrong I was. Seeing people my age working together, shoulder to shoulder, to bring change in the society that we live in is a breath of fresh air I was yearning for unknowingly. 
+
+				  When someone says "Amoli", the only word that comes to mind is "Love". Calling Amoli an NGO is an understatement. It is a family that is bound by love and respect for each other. Where ideas flow like a roaring river and everyone works ceaselessly, day in and day out.
+
+				  I am blessed to be here among such brilliant minds and caring hearts. I learn everyday at Amoli. I live life everyday, at Amoli.</p>
+                  <p class="overview"><b>Aditya Ramachandran</b></p>
+                </div>
+				-->
+                <!-----------------------Old Testimonials------------------------------>
                 <div class="item carousel-item">
                   <div class="img-box"><img src="images/test/2.PNG" alt=""></div>
                   <p class="testimonial">Volunteering with Amoli was a real time experience. It not
@@ -580,19 +931,21 @@
         <div class="row">
           <div class="col-md-4">
             <h3>About Us</h3>
-            <p align="justify" style="color:#ddd;"> Amoli, meaning ‘precious’ is an NGO started by 8 college students, which
+            <p align="justify"> Amoli, meaning ‘precious’ is an NGO started by 8 college students, which
               educates children about the abnormality of Child Sexual Abuse prevailing in the society and
               helps in protection of their innocence.</p>
           </div>
           <div class="col-md-3 col-md-push-1">
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="index.html"><span>Home</span></a></li>
-              <li><a href="about-us.html"><span>About us</span></a></li>
-              <li><a href="our-work.html"><span>Our Work</span></a></li>
-              <li><a href="resources.html"><span>resources</span></a></li>
-              <li><a href="your_contribution.html"><span>Your Contribution</span></a></li>
-              <li><a href="contact-us.html"><span>Contact Us</span></a></li>
+              <li><a href="https://amolitrust.com"><span>Home</span></a></li>
+              <li><a href="about-us"><span>About us</span></a></li>
+              <li><a href="team"><span>Meet the team</span></a></li>
+              <li><a href="gallery"><span>Gallery</span></a></li>
+              <li><a href="mystory"><span>My Story</span></a></li>
+              <li><a href="join-us"><span>Join Us</span></a></li>
+              <li><a href="https://blog.amolitrust.com" target="_blank"><span>Blog</span></a></li>
+              <li><a href="contact-us"><span>Contact</span></a></li>
             </ul>
           </div>
           <div class="col-md-3 col-md-push-1">
@@ -611,7 +964,8 @@
         </div>
         <div class="row">
           <div class="col-md-12 fh5co-copyright text-center">
-            <p style="color:#ddd;"><small>&copy; 2019 Amoli Trust. All Rights Reserved. Developed by Pragya, Navya, Swastik</p>
+            <p><small>&copy; 2019 Amoli Trust. All Rights Reserved. Developed by <a href="https://adityaarora.info"
+                  target="_blank">Aditya Arora</a></small></p>
           </div>
         </div>
       </div>
@@ -640,6 +994,20 @@
       });
     </script>
 
+    <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-body">
+          <a class="btn btn-primary google-form" rel="noopener noreferrer" target="_blank"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSepnwhEY71iq8TQBYZ15PnbHHtm5I7__aMnTOfUXZ60BCjPVw/viewform">
+            Sign Up For An Online Session
+          </a>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="cross" aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+    </div> -->
   </body>
 
 </html>
