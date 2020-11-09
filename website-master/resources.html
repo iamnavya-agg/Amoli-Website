@@ -31,6 +31,121 @@
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<style>
+		#i1, #i2, #i3, #i4, #i5, #i6, #i7, #i8, #i9, #i10{display: none;}
+
+		.icontainer{
+        	position: relative;
+        	width: 70%;
+        	height: 10;
+        	padding-bottom: 38%;
+        	user-select: none;
+        	background-color: #1c1c1c;
+        	border-radius:10px ; 
+    	}
+
+    	.icontainer .slide_img{
+        	position: absolute;
+        	width: 100%;
+        	height: 100%;
+    	}
+	
+		.icontainer .slide_img img{
+        	width: inherit;
+        	height: inherit;
+    	}
+
+     	.prev, .next{
+        	width: 6%;
+        	height: inherit;
+        	position: absolute;
+        	top:0; 
+        	background-color: rgba(88, 88, 88,.2);
+        	color:rgba(244, 244, 244,.9);
+       		z-index: 99;
+        	transition: .45s;
+        	cursor: pointer;
+        	text-align: center;
+    	}
+
+    	.next{right:0;}
+    	.prev{left:0;}
+
+    	label span{
+			position: absolute;
+			top: 50%;
+			left: 30%;
+			font-size: 50px;
+        	transform: translateY(-50%);
+    	}
+
+    	.prev:hover, .next:hover{
+        	transition: .3s;
+        	background-color: rgba(88, 88, 89,.8);
+        	color: #ffffff; 
+    	}
+
+	.icontainer #nav_slide{
+    	width: 100%;
+    	bottom: 12%;
+    	height: 11px;
+    	position: absolute;
+    	text-align: center;
+    	z-index: 99;
+    	cursor: default;
+	}
+
+	#nav_slide .dots{
+    	top: -5px;
+    	width: 10px;
+    	height: 10px;
+    	margin: 0 4px;
+    	position: relative;
+    	border-radius: 100%;
+    	display: inline-block;
+    	background-color: rgba(0, 0, 0, 0.6);
+    	transition: .4s;
+	}
+
+	#nav_slide .dots:hover {
+    	cursor: pointer;
+    	background-color: rgba(255, 255, 255, 0.9);
+    	transition: .25s
+	}
+
+	.slide_img{z-index: -1;}
+
+    #i1:checked ~ #one,
+    #i2:checked ~ #two,
+    #i3:checked ~ #three,
+    #i4:checked ~ #four,
+    #i5:checked ~ #five,
+    #i6:checked ~ #six,
+    #i7:checked ~ #seven,
+    #i8:checked ~ #eight,
+    #i9:checked ~ #nine,
+    #i10:checked ~ #ten
+    {z-index: 9; animation: scroll 1s ease-in-out;}
+
+    #i1:checked  ~  #nav_slide #dot1,
+    #i2:checked  ~  #nav_slide #dot2,
+    #i3:checked  ~  #nav_slide #dot3,
+    #i4:checked  ~  #nav_slide #dot4,
+    #i5:checked  ~  #nav_slide #dot5,
+    #i6:checked  ~  #nav_slide #dot6,
+    #i7:checked  ~  #nav_slide #dot7,
+    #i8:checked  ~  #nav_slide #dot8,
+    #i9:checked  ~  #nav_slide #dot9,
+    #i10:checked  ~  #nav_slide #dot10
+
+    { background-color: rgba(255,255,255,.9);}
+
+	@keyframes scroll{
+    	0%{ opacity:.4;}
+    	100%{opacity:1;}
+	}
+	</style>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -75,34 +190,58 @@
 		<div class="fh5co-section">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6">
-						<h2>BLOG</h2>
-						<p style="font-size: 18px;">
+					<div class="col-md-6" >
+						<h2 style="margin-bottom: 40px;">BLOG</h2>
+						<p style="font-size: 18px; text-align: justify; margin-bottom: 14px;">
 							Amoli which started with 8 people has now extended to a large family of volunteers who have been actively working to provide help at the best. As the team grew so did the desire to reach people through different mediums. Our volunteers are managing and developing content that will help you understand CSA better and actively understand the current social scenario. These blogs have been curated to provide parents and caregivers the right set of information to help understand their children better and actively improve their social settings.
-							<br><b>To view our blogs, <a href="https://blog.amolitrust.com" target="_blank">click here</a></b>
+							<br><b>To view our comics, <a href="https://blog.amolitrust.com" target="_blank">click here</a></b>
 						</p>
+						<!--<div style="margin-bottom:100px; border:4px; border-style:groove; padding:5px 30px 5px 30px; position: absolute; left: 50%; -ms-transform: translate(-50%); transform: translate(-50%);">
+							<a href="https://blog.amolitrust.com" target="_blank" style="font-weight: bold;"><span style="color:rgb(51, 51, 51);">To view our blogs,</span><br>click here</a>
+						</div>  
+						add padding-bottom:100px at div class="col-md-6" line(194)  
+					    -->
 					</div>
 					<div class="col-md-6" style="padding:2%;">
 						<img src="photos/3.JPG" class="img-responsive img-right">
 					</div>
 				</div>
-
-				<div class="row">
-					<h2>COMICS</h2>
-					<div class="col-md-6">
-						<img src="photos/IMG_0617.JPG" class="img-responsive">
-					</div>
-					<div class="col-md-6 txt-left">
-						<p style="font-size: 18px;">
-							Graphical representation has always aided learning better.Emerging research shows that comics and graphic strips are motivating, support struggling readers, enrich the skills of accomplished readers. Through this medium, volunteers at Amoli want to make learning accessible and interesting for everyone.
-							<br><b>To view our comics, <a href="https://blog.amolitrust.com" target="_blank">click here</a></b>
-						</p>
+			</div>
+			<div class="row"  style="background-color: aqua; padding: 2% 3% 3% 3%;">
+				<h2 style="margin-top: 0px; margin-bottom: 40px;">COMICS</h2>
+				<div class="col-md-6">
+					<div class="icontainer" style="width: 100%; height: 100%">
+						<input type="radio" id="i1" name="images" checked />
+						<input type="radio" id="i2" name="images" />
+						<div class="slide_img" id="one">
+							<img src="photos/contact.jpg">
+							<label class="prev" for="i2"><span>&#x2039;</span></label>
+							<label class="next" for="i2"><span>&#x203a;</span></label>  
+						</div>
+						<div class="slide_img" id="two">
+							<img src="photos/3.JPG" >
+							<label class="prev" for="i1"><span>&#x2039;</span></label>
+							<label class="next" for="i1"><span>&#x203a;</span></label>
+						</div>
+						<div id="nav_slide">
+							<label for="i1" class="dots" id="dot1"></label>
+							<label for="i2" class="dots" id="dot2"></label>
+						</div>	
 					</div>
 				</div>
 
+				<div class="col-md-6 txt-left">
+					<p style="font-size: 18px; text-align: justify; color: black;">
+						Graphical representation has always aided learning better. Emerging research shows that comics and graphic strips are motivating, support struggling readers, enrich the skills of accomplished readers. Through this medium, volunteers at Amoli want to make learning accessible and interesting for everyone.
+						<br><b>To view our comics, <a href="https://blog.amolitrust.com" target="_blank">click here</a></b>
+					</p>
+				</div>
+			</div>
+			<div class="container">
 				<div class="row">
 					<h2>RESEARCH</h2>
-					<p class="para-res" style="font-size: 18px;">As an organisation working in the social sector, it is imperative to actively contribute to understand the world better. Amoli has contributed in various research settings to improve the environment around children. In today's data-driven world,providing statistics at one spot will help study social and behavioral changes in your child better, and answer important cultural questions.</p>
+					<p class="para-res" style="font-size: 18px; text-align: justify;">As an organisation working in the social sector, it is imperative to actively contribute to understand the world better. Amoli has contributed in various research settings to improve the environment around children. In today's data-driven world,providing statistics at one spot will help study social and behavioral changes in your child better, and answer important cultural questions.</p>
+					<!--
 					<div class="col-md-4 col-sm-6 col-xs-8" align="center">
 						<div class="gal-box">
 							<a href="theme1.html">
@@ -115,73 +254,9 @@
 								</div>
 							</a>
 						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-8" align="center">
-						<div class="gal-box">
-							<a href="theme1.html">
-								<div class="gal-cover">
-									<div class="head-gal">Theme 2</div>
-									Random text for this theme.
-									<div class="button-gal">
-										<span class="btn-text" style="height:100%; padding-top:2%; display:table; margin:0 auto;">View More</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-8" align="center">
-						<div class="gal-box">
-							<a href="theme1.html">
-								<div class="gal-cover">
-									<div class="head-gal">Theme 3</div>
-									Random text for this theme.
-									<div class="button-gal">
-										<span class="btn-text" style="height:100%; padding-top:2%; display:table; margin:0 auto;">View More</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-8" align="center">
-						<div class="gal-box">
-							<a href="theme1.html">
-								<div class="gal-cover">
-									<div class="head-gal">Theme 4</div>
-									Random text for this theme.
-									<div class="button-gal">
-										<span class="btn-text" style="height:100%; padding-top:2%; display:table; margin:0 auto;">View More</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-8" align="center">
-						<div class="gal-box">
-							<a href="theme1.html">
-								<div class="gal-cover">
-									<div class="head-gal">Theme 5</div>
-									Random text for this theme.
-									<div class="button-gal">
-										<span class="btn-text" style="height:100%; padding-top:2%; display:table; margin:0 auto;">View More</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-8" align="center">
-						<div class="gal-box">
-							<a href="theme1.html">
-								<div class="gal-cover">
-									<div class="head-gal">Theme 6</div>
-									Random text for this theme.
-									<div class="button-gal">
-										<span class="btn-text" style="height:100%; padding-top:2%; display:table; margin:0 auto;">View More</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
+					</div>-->
 				</div>
+			</div>
 			</div>
 		</div>
 	</div>
